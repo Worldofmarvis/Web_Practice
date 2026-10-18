@@ -19,13 +19,3 @@ A six-page website for a fictional community basketball league. It is built with
 - `images/` holds the logo, favicon, team badges and the court picture (all SVG).
 - `media/` holds the audio clip.
 
-## Notes
-
-- All names, dates, scores and sponsors are invented.
-- There are 4 teams for now instead of 8. The structure repeats, so more teams can be added by copying a team block.
-- The YouTube embed uses a sample video ID. Replace it with your own highlights video.
-- The map pin is a placeholder. Replace the coordinates with the real venue.
-
-## What was hardest
-
-_Write this in your own words, for example which page or rule took the most time to get right._
