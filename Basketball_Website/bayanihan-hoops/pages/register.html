@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Bayanihan Hoops League</title>
+  <meta name="description" content="Sign up as a player for Season 5 of the Bayanihan Hoops League.">
+  <link rel="stylesheet" href="css/styeles.css">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <p>
+      <a href="../index.html">
+        <!-- alt is empty on purpose: the league name beside the logo already labels the link -->
+        <img src="../images/logo.svg" alt="" width="48" height="48">
+        Bayanihan Hoops League
+      </a>
+    </p>
+    <p><span lang="fil">Pagkakaisa sa bawat laro</span> (Unity in every game)</p>
+
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule-standings.html">Schedule &amp; Standings</a></li>
+        <li><a href="register.html" class="nav-register" aria-current="page">Register</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <h1>Register as a player</h1>
+    <p>Fill out the form below. Fields marked "required" must be completed before you can submit.</p>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Player sign-up form</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>About you</legend>
+          <p>
+            <label for="full-name">Full name (required)</label><br>
+            <input type="text" id="full-name" name="full-name" required minlength="2" maxlength="60" autocomplete="name">
+          </p>
+          <p>
+            <label for="email">Email address (required)</label><br>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+          <p>
+            <label for="phone">Phone number (required)</label><br>
+            <input type="tel" id="phone" name="phone" required pattern="(09|\+639)[0-9]{9}" title="Use 09XXXXXXXXX or +639XXXXXXXXX" aria-describedby="phone-hint" autocomplete="tel">
+            <br><span id="phone-hint">Example: 09171234567</span>
+          </p>
+          <p>
+            <label for="birth-date">Birth date (required)</label><br>
+            <input type="date" id="birth-date" name="birth-date" required min="1950-01-01" max="2018-12-31">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred position (required)</legend>
+          <p>
+            <label for="position">Choose one position</label><br>
+            <select id="position" name="position" required>
+              <option value="">Select a position</option>
+              <option value="point-guard">Point guard</option>
+              <option value="shooting-guard">Shooting guard</option>
+              <option value="small-forward">Small forward</option>
+              <option value="power-forward">Power forward</option>
+              <option value="center">Center</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skill level (required, choose one)</legend>
+          <p><input type="radio" id="skill-beginner" name="skill-level" value="beginner" required> <label for="skill-beginner">Beginner</label></p>
+          <p><input type="radio" id="skill-intermediate" name="skill-level" value="intermediate" required> <label for="skill-intermediate">Intermediate</label></p>
+          <p><input type="radio" id="skill-advanced" name="skill-level" value="advanced" required> <label for="skill-advanced">Advanced</label></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Days available (choose all that apply)</legend>
+          <p><input type="checkbox" id="day-friday" name="days" value="friday-evening"> <label for="day-friday">Friday evening</label></p>
+          <p><input type="checkbox" id="day-saturday" name="days" value="saturday"> <label for="day-saturday">Saturday</label></p>
+          <p><input type="checkbox" id="day-sunday" name="days" value="sunday"> <label for="day-sunday">Sunday</label></p>
+        </fieldset>
+
+        <p>
+          <label for="message">Why do you want to join? (optional, up to 300 characters)</label><br>
+          <textarea id="message" name="message" rows="5" cols="50" maxlength="300"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="agree" name="agree" value="yes" required>
+          <label for="agree">I agree to follow the <a href="news.html#registration-open">league rules</a> (required)</label>
+        </p>
+
+        <p><button type="submit">Submit registration</button></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bayanihan Hoops League. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
